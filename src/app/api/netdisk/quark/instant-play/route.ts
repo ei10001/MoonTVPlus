@@ -2,7 +2,7 @@ import { NextRequest, NextResponse } from 'next/server';
 
 import { getAuthInfoFromCookie } from '@/lib/auth';
 import { getConfig } from '@/lib/config';
-import { createQuarkInstantPlayFolder } from '@/lib/quark.client';
+import { createQuarkInstantPlayFolder } from '@/lib/netdisk/quark.client';
 import { base58Encode } from '@/lib/utils';
 
 export const runtime = 'nodejs';

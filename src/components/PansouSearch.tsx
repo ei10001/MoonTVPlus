@@ -125,7 +125,7 @@ export default function PansouSearch({
   const handleQuarkTransfer = async (link: PansouLink) => {
     try {
       setTransferingUrl(link.url);
-      const response = await fetch('/api/quark/transfer', {
+      const response = await fetch('/api/netdisk/quark/transfer', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -152,7 +152,7 @@ export default function PansouSearch({
   const handleQuarkInstantPlay = async (link: PansouLink) => {
     try {
       setPlayingUrl(link.url);
-      const response = await fetch('/api/quark/instant-play', {
+      const response = await fetch('/api/netdisk/quark/instant-play', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

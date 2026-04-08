@@ -9,7 +9,7 @@ import {
   assertQuarkCookieHeaderSafe,
   normalizeQuarkCookie,
   validateQuarkCookieReadable,
-} from '@/lib/quark.client';
+} from '@/lib/netdisk/quark.client';
 
 export const runtime = 'nodejs';
 
